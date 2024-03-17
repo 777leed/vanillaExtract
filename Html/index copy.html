@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Css/style.css">
+  <style>
+    .thought {
+      position: absolute;
+      z-index: 100;
+      user-select: none;
+      cursor: grab;
+    }
+    .thought.dragging {
+      cursor: grabbing;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="prv"> 
+    </div>
+
+    <div class="top-bar">
+
+      <div class="jukebox">
+        <audio src="" id="audioPlayer"></audio>
+        <div class="juke-details">
+          <div class="marquee">
+            <div>
+              <span>Mac Miller - Come Back To Earth</span>
+            </div>
+          </div>
+          <span class="material-symbols-outlined cursorr iconz" id="previous-song">skip_previous</span>
+          <span class="material-symbols-outlined cursorr iconz" id="play-pause-song">play_pause</span>
+          <span class="material-symbols-outlined cursorr iconz" id="skip-song">skip_next</span>
+          <span id="timer" style="padding-right: 10px;">00:00</span>
+ 
+        </div>
+        <div id="progress-bar"></div>
+      </div>
+      <div>
+        <span id="sp">
+          Space
+        </span>
+      </div>
+      <div class="window-control">
+        <div class="control-button" id="minimize-app">
+          <span class="material-symbols-outlined">
+            circle
+          </span>
+        </div>
+        <div class="control-button">
+          <span class="material-symbols-outlined">
+            change_history
+          </span>
+        </div>
+        <div class="control-button" id="close-app">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="thoughtContainer">
+
+    </div>
+
+    <div class="character">
+      <img src="C:/Users/hp/Downloads/c06.gif" alt="">
+    </div>
+    <div class="bottom-info">
+      <div class="texxt">
+        <span>-</span>
+        <input type="text" id="myInput">
+      </div>
+      <div class="small-screens">
+        <div class="info-box">
+          <span>Thoughts: </span>
+          <span id="thoughtCount">0</span>
+        </div>
+        <div class="info-box">
+          <span>Characters: </span>
+          <span id="charCount">0</span>
+        </div>
+        <div class="info-box">
+          <span>Dead: </span>
+          <span id="deadCount">0</span>
+        </div>
+      </div>
+    </div>
+    <div id="nxt"> 
+    </div>
+  </div>
+<!-- <script type="module" src="../TESTING/test2.js"></script>
+<script>
+
+const prvElement = document.getElementById('prv');
+const nxtElement = document.getElementById('nxt');
+
+function checkCursorPosition(event) {
+    const cursorX = event.clientX;
+    const screenWidth = window.innerWidth; 
+
+    // Check for #prv element
+    if (cursorX <= 10) {
+        prvElement.classList.add('show');
+    } else {
+        prvElement.classList.remove('show');
+    }
+
+    // Check for #nxt element
+    if (cursorX >= screenWidth - 10) {
+        nxtElement.classList.add('show');
+    } else {
+        nxtElement.classList.remove('show');
+    }
+}
+
+document.addEventListener('mousemove', checkCursorPosition);
+
+</script> -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Search Engine Test</title>
+</head>
+<body>
+    <div class="h-wrapper">
+        <div id="blur-overlay"></div>
+        
+    </div>
+
+    
+</body>
+
+    <script type="importmap">
+        {
+        "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+        }
+    </script>
+    <script type="module">
+
+        const risenPromptTxt = `
+        Role: Imagine you're an experienced content strategist with a knack for synthesizing diverse ideas into cohesive narratives.
+
+        Main Task: Craft a concise summary that captures the essence of the random user thoughts provided below and outlines the user's underlying objective.
+
+        Steps to complete the task:
+
+        Review the random user thoughts provided and identify recurring themes or underlying messages.
+        Organize the thoughts into a coherent structure, highlighting key points and connections between different ideas.
+        Distill the main objective or goal that the user is trying to achieve based on the provided thoughts.
+        Craft a paragraph that effectively communicates the summary and objective in a clear and compelling manner.
+        Goal: The goal is to provide the user with a succinct summary of their thoughts and clarify their underlying objective or purpose.
+
+        Constraints: Maximum of 200 words. - Use simple and straightforward language. - Ensure the summary captures the essence of the user's thoughts and objectives accurately.
+
+        Random User Thoughts: 
+        `
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+        // Fetch your API_KEY
+        const API_KEY = "AIzaSyDzYqr6tYrGR2Rq1KCYVpNJXCkgKh-iPpc";
+        // Access your API key (see "Set up your API key" above)
+        const genAI = new GoogleGenerativeAI(API_KEY);
+
+
+        async function run() {
+            // For text-only input, use the gemini-pro model
+            const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+            const prompt = risenPromptTxt + ' '
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = response.text();
+            console.log(text);
+            }
+
+        run();
+
+    </script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <div class="navigation">
+        <img src="../Assets/chevron.png" class="rotate-h" alt="go back arrow" id="goback">
+      </div>
+      <div class="space-title-container">
+        <div class="space-title" id="spacenamee">
+          XXXX
+        </div>
+        <div id="space-menu" class="glassify">
+          <div class="space-menu-elm"><span>Favorite Space</span><img src="../Assets/wishlist.png" alt=""></div>
+          <div class="space-menu-elm"><span>Template Space</span><img src="../Assets/layout.png" alt=""></div>
+          <div class="space-menu-elm"><span>Rename Space</span><img src="../Assets/pencil.png" alt=""></div>
+          <div class="space-menu-elm"><span>Remove Space</span><img src="../Assets/bin.png" alt=""></div>
+        </div>
+      </div>
+
+
+      <div class="window-controls">
+        <div class="win-btn">
+          <img src="../Assets/close-button.png" alt="" id="close-app">
+        </div>
+        <div class="win-btn">
+          <img src="../Assets/fullscreen.png" alt="">
+        </div>
+        <div class="win-btn">
+          <img src="../Assets/minus.png" alt="" id="minimize-app">
+        </div>
+      </div>
+    </div>
+
+    <div id="thoughtContainer">
+
+    </div>
+
+    <div class="bottom-info">
+      <div class="typebar-container">
+        <div id="image-container" class="glassify">
+        </div>
+        <div class="type-bar">
+          <input type="text" placeholder="Type Here" id="my-input">
+          <div id="send">
+            <img src="../Assets/send (1).png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span class="stat">Thoughts : <span id="thoughtCount">0</span></span>
+        <span class="stat">Characters : 0</span>
+        <span class="stat">Dead : 0</span>
+      </div>
+    </div>
+
+  </div>
+  <script type="importmap">
+    {
+    "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+    }
+    }
+  </script>
+<script type="module" src="../TESTING/test2.js"></script>
+<script src="../JS/util.js"></script>
+
+
+
+</body>
+</html>
