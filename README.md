@@ -30,8 +30,6 @@ Vanilla caters to a diverse range of use cases, including language learning, pro
 ### Preview 4
 ![Preview](https://github.com/777leed/vanillaExtract/blob/main/preview5.png)
 
-## Installation
-To get started with Vanilla, simply clone the repository to your local machine and follow the installation instructions in the provided documentation.
 
 ## Usage
 1. **Create Spaces**: Begin by creating spaces to organize your notes and ideas.
@@ -40,18 +38,11 @@ To get started with Vanilla, simply clone the repository to your local machine a
 4. **Utilize Advanced Features**: Explore features such as Motor Search and YouTube Summarization to enhance your note-taking experience.
 5. **Experiment and Learn**: Take advantage of Space Concepts and Space Keynotes to structure your ideas and expand your knowledge.
 
-## Contributing
-We welcome contributions from the community to improve and expand Vanilla. If you'd like to contribute, please follow our [contribution guidelines](CONTRIBUTING.md) and submit a pull request.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any inquiries or support, feel free to contact us at [email@example.com](mailto:email@example.com).
-
-## Acknowledgements
-We would like to express our gratitude to the developers and contributors who have made this project possible. Thank you for your dedication and support.
+For any inquiries or support, feel free to contact me at [khalidkoukou70@gmail.com](mailto:khalidkoukou70@gmail.com).
 
 ---
-
-Feel free to customize this README further with additional sections or information specific to your project.
